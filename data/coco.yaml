@@ -1,0 +1,254 @@
+#path: ../datasets/coco  # 数据集根目录
+train: D:\code\python\python-self\ship\yolov9-main\yolov9-main\data\data\train # 训练图像（相对于 'path'），共118287张图像
+val: D:\code\python\python-self\ship\yolov9-main\yolov9-main\data\data\test # 验证图像（相对于 'path'），共5000张图像
+test: D:\code\python\python-self\ship\yolov9-main\yolov9-main\data\data\test # 40670张图像中的20288张，提交到https://competitions.codalab.org/competitions/20794
+
+nc: 130
+
+names:
+  0: 635-hydrographic Survey Ship
+  1: San Antonio-class amphibious transport dock
+  2: Submarine
+  3: 529-Minesweeper
+  4: 052D-destroyer
+  5: Barracks Ship
+  6: USNS Montford Point
+  7: Freedom-class littoral combat ship
+  8: 082II-Minesweeper
+  9: Traffic boat
+  10: Yacht
+  11: Kurobe-class training support ship
+  12: 054-frigate
+  13: Container Ship
+  14: Akizuki-class destroyer
+  15: Hatsuyuki-class destroyer
+  16: 074-landing ship
+  17: 053H3-frigate
+  18: JS Chihaya
+  19: 639A-Hydroacoustic measuring ship
+  20: Sand Carrier
+  21: JMSDF LCU-2001 class utility landing crafts
+  22: 648-submarine repair ship
+  23: Independence-class littoral combat ship
+  24: 051C-destroyer
+  25: 920-hospital ship
+  26: 071-amphibious transport dock
+  27: 052C-destroyer
+  28: Sugashima-class minesweepers
+  29: 925-Ocean salvage lifeboat
+  30: Tarawa-class amphibious assault ship
+  31: 073-landing ship
+  32: 891A-training ship
+  33: Towada-class replenishment oilers
+  34: Hatsushima-class minesweeper
+  35: Northampton-class tug
+  36: Uwajima-class minesweepers
+  37: 904B-general stores issue ship
+  38: Mashu-class replenishment oilers
+  39: Emory S. Land-class submarine tender
+  40: 054A-frigate
+  41: Barge
+  42: 022-missile boat
+  43: YG-203 class yard gasoline oiler
+  44: Takanami-class destroyer
+  45: Lewis B. Puller-class expeditionary mobile base ship
+  46: 922A-Salvage lifeboat
+  47: Lewis and Clark-class dry cargo ship
+  48: Futami-class hydro-graphic survey ships
+  49: 053H1G-frigate
+  50: Iowa-class battle ship
+  51: 905-replenishment ship
+  52: 001-aircraft carrier
+  53: Oliver Hazard Perry-class frigate
+  54: 051-destroyer
+  55: 926-submarine support ship
+  56: 272-icebreaker
+  57: USNS Spearhead
+  58: 903-replenishment ship
+  59: Arleigh Burke-class Destroyer
+  60: Nimitz Aircraft Carrier
+  61: 815-spy ship
+  62: unknown
+  63: Mercy-class hospital ship
+  64: Ticonderoga-class cruiser
+  65: 721-transport boat
+  66: 636-hydrographic survey ship
+  67: 081-Minesweeper
+  68: Whidbey Island-class dock landing ship
+  69: 072II-landing ship
+  70: Abukuma-class destroyer escort
+  71: 904-general stores issue ship
+  72: 625C-Oceanographic Survey Ship
+  73: 903A-replenishment ship
+  74: North Transfer 990
+  75: 815A-spy ship
+  76: Fishing Vessel
+  77: Tuzhong Class Salvage Tug
+  78: Hyuga-class helicopter destroyer
+  79: Hatakaze-class destroyer
+  80: Other Warship
+  81: Blue Ridge class command ship
+  82: Bunker
+  83: USNS Bob Hope
+  84: Zumwalt-class destroyer
+  85: Hayabusa-class guided-missile patrol boats
+  86: Bulk carrier
+  87: 072A-landing ship
+  88: Osumi-class landing ship
+  89: JS Kurihama
+  90: Avenger-class mine countermeasures ship
+  91: 908-replenishment ship
+  92: 053H2G-frigate
+  93: 056-corvette
+  94: Tank ship
+  95: 072III-landing ship
+  96: 055-destroyer
+  97: 037-hospital ship
+  98: 052B-destroyer
+  99: Tenryu-class training support ship
+  100: 679-training ship
+  101: 051B-destroyer
+  102: 680-training ship
+  103: YW-17 Class Yard Water
+  104: Wasp-class amphibious assault ship
+  105: Henry J. Kaiser-class replenishment oiler
+  106: 037-submarine chaser
+  107: Hibiki-class ocean surveillance ships
+  108: Towing vessel
+  109: YO-25 class yard oiler
+  110: Kongo-class destroyer
+  111: 052-destroyer
+  112: Cyclone-class patrol ship
+  113: 917-lifeboat
+  114: Xu Xiake barracks ship
+  115: 901-fast combat support ship
+  116: 909A-experimental ship
+  117: Uraga-class Minesweeper Tender
+  118: Powhatan-class tugboat
+  119: Sovremenny-class destroyer
+  120: unknown auxiliary ship
+  121: Izumo-class helicopter destroyer
+  122: Forrestal-class Aircraft Carrier
+  123: Hiuchi-class auxiliary multi-purpose support ship
+  124: Yaeyama-class minesweeper
+  125: Murasame-class destroyer
+  126: Asagiri-class Destroyer
+  127: 909-experimental ship
+  128: 037II-missile boat
+  129: Sacramento-class fast combat support ship
+# 物体名称
+stuff_names: [
+  'banner',  # 横幅
+  'blanket',  # 毯子
+  'branch',  # 树枝
+  'bridge',  # 桥
+  'building-other',  # 其他建筑
+  'bush',  # 灌木
+  'cabinet',  # 橱柜
+  'cage',  # 笼子
+  'cardboard',  # 纸板
+  'carpet',  # 地毯
+  'ceiling-other',  # 其他天花板
+  'ceiling-tile',  # 天花板瓷砖
+  'cloth',  # 布
+  'clothes',  # 衣服
+  'clouds',  # 云
+  'counter',  # 柜台
+  'cupboard',  # 碗柜
+  'curtain',  # 窗帘
+  'desk-stuff',  # 桌面物品
+  'dirt',  # 泥土
+  'door-stuff',  # 门
+  'fence',  # 篱笆
+  'floor-marble',  # 大理石地板
+  'floor-other',  # 其他地板
+  'floor-stone',  # 石地板
+  'floor-tile',  # 瓷砖地板
+  'floor-wood',  # 木地板
+  'flower',  # 花
+  'fog',  # 雾
+  'food-other',  # 其他食物
+  'fruit',  # 水果
+  'furniture-other',  # 其他家具
+  'grass',  # 草
+  'gravel',  # 砂砾
+  'ground-other',  # 其他地面
+  'hill',  # 小山
+  'house',  # 房子
+  'leaves',  # 树叶
+  'light',  # 灯
+  'mat',  # 垫子
+  'metal',  # 金属
+  'mirror-stuff',  # 镜子
+  'moss',  # 苔藓
+  'mountain',  # 山
+  'mud',  # 泥
+  'napkin',  # 餐巾
+  'net',  # 网
+  'paper',  # 纸
+  'pavement',  # 人行道
+  'pillow',  # 枕头
+  'plant-other',  # 其他植物
+  'plastic',  # 塑料
+  'platform',  # 平台
+  'playingfield',  # 操场
+  'railing',  # 栏杆
+  'railroad',  # 铁路
+  'river',  # 河
+  'road',  # 路
+  'rock',  # 石头
+  'roof',  # 屋顶
+  'rug',  # 小地毯
+  'salad',  # 沙拉
+  'sand',  # 沙子
+  'sea',  # 海
+  'shelf',  # 货架
+  'sky-other',  # 其他天空
+  'skyscraper',  # 摩天大楼
+  'snow',  # 雪
+  'solid-other',  # 其他固体
+  'stairs',  # 楼梯
+  'stone',  # 石头
+  'straw',  # 稻草
+  'structural-other',  # 其他结构
+  'table',  # 桌子
+  'tent',  # 帐篷
+  'textile-other',  # 其他纺织品
+  'towel',  # 毛巾
+  'tree',  # 树
+  'vegetable',  # 蔬菜
+  'wall-brick',  # 砖墙
+  'wall-concrete',  # 混凝土墙
+  'wall-other',  # 其他墙
+  'wall-panel',  # 墙板
+  'wall-stone',  # 石墙
+  'wall-tile',  # 瓷砖墙
+  'wall-wood',  # 木墙
+  'water-other',  # 其他水体
+  'waterdrops',  # 水滴
+  'window-blind',  # 窗帘
+  'window-other',  # 其他窗户
+  'wood',  # 木头
+  # 其他
+  'other',  # 其他
+  # 未标注
+  'unlabeled'  # 未标注
+]
+
+
+# 下载脚本/URL（可选）
+download: |
+  from utils.general import download, Path
+
+  # 下载标签
+  #segments = True  # 分割或框标签
+  #dir = Path(yaml['path'])  # 数据集根目录
+  #url = 'https://github.com/WongKinYiu/yolov7/releases/download/v0.1/'
+  #urls = [url + ('coco2017labels-segments.zip' if segments else 'coco2017labels.zip')]  # 标签
+  #download(urls, dir=dir.parent)
+
+  # 下载数据
+  #urls = ['http://images.cocodataset.org/zips/train2017.zip',  # 19G, 118k图像
+  #        'http://images.cocodataset.org/zips/val2017.zip',  # 1G, 5k图像
+  #        'http://images.cocodataset.org/zips/test2017.zip']  # 7G, 41k图像（可选）
+  #download(urls, dir=dir / 'images', threads=3)

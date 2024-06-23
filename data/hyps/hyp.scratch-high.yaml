@@ -1,0 +1,30 @@
+lr0: 0.01  # 初始学习率（SGD=1E-2, Adam=1E-3）
+lrf: 0.01  # 最终的OneCycleLR学习率（lr0 * lrf）
+momentum: 0.937  # SGD动量/Adam beta1
+weight_decay: 0.0005  # 优化器权重衰减5e-4
+warmup_epochs: 3.0  # 预热周期（可以是小数）
+warmup_momentum: 0.8  # 预热初始动量
+warmup_bias_lr: 0.1  # 预热初始偏置学习率
+box: 7.5  # 边框损失增益
+cls: 0.5  # 分类损失增益
+cls_pw: 1.0  # 分类BCELoss正权重
+obj: 0.7  # 目标损失增益（随像素缩放）
+obj_pw: 1.0  # 目标BCELoss正权重
+dfl: 1.5  # DFL损失增益
+iou_t: 0.20  # IoU训练阈值
+anchor_t: 5.0  # 锚框倍数阈值
+# anchors: 3  # 每个输出层的锚框数（0表示忽略）
+fl_gamma: 0.0  # 焦点损失gamma（efficientDet默认gamma=1.5）
+hsv_h: 0.015  # 图像HSV-色调增强（比例）
+hsv_s: 0.7  # 图像HSV-饱和度增强（比例）
+hsv_v: 0.4  # 图像HSV-亮度增强（比例）
+degrees: 0.0  # 图像旋转（+/-度）
+translate: 0.1  # 图像平移（+/-比例）
+scale: 0.9  # 图像缩放（+/-增益）
+shear: 0.0  # 图像剪切（+/-度）
+perspective: 0.0  # 图像透视（+/-比例），范围0-0.001
+flipud: 0.0  # 图像上下翻转（概率）
+fliplr: 0.5  # 图像左右翻转（概率）
+mosaic: 1.0  # 图像拼接（概率）
+mixup: 0.15  # 图像混合（概率）
+copy_paste: 0.3  # 片段复制粘贴（概率）
